@@ -11,6 +11,7 @@ exe_path =
   case platform_string
   when /aarch64-linux/ then File.join(__dir__, "aarch64-linux/sass")
   when /arm(64)?-darwin/ then File.join(__dir__, "arm64-darwin/sass")
+  when /armv[67].*-linux/ then File.join(__dir__, "arm-linux/sass")
   when /darwin/ then File.join(__dir__, "darwin/sass")
   when /linux/ then File.join(__dir__, "linux/sass")
   when /mswin|mingw|cygwin/ then File.join(__dir__, "mingw32/sass.bat")
